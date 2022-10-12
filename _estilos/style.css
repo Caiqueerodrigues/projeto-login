@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #5f2c82;
+    width: 100vw;
+    height: 100vh;
+}
+ 
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.726);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+
+}
+#imagem {
+    display: block;
+    background: #5f2c82 url(../_imagens/pexels-dinnow-9444476.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+#formulário {
+    display: block;
+    padding: 10px;
+}
+#formulario h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#formulario p {
+    padding: 0px 10px;
+    font-size: 0.9em;
+}
+
+.campo {
+    height: 40px;
+    background-color: #5f2c82;
+    font-size: 2em;
+    border-radius: 10px;
+    margin: 5px;
+}
+span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    margin-right: -15px;
+    padding: 5px;
+}
+.campo input {
+    background-color: #49a09d;
+    width: calc(100% - 34px);
+    height: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #5f2c82;
+    transform: translateY(-4px);
+}
+.campo input:focus-within {
+    background-color: white;
+}
+
+input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #49a09d;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+input[type=submit]:hover {
+    color: blue;
+    font-weight: bold;
+    background-color: #295e5c;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+form a {
+    color: black;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 90%;
+    height: 40px;
+    background-color: #6ef1ed;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    text-decoration: none;
+}
+form a:hover {
+    color: blue;
+    font-weight: bold;
+    background-color: #49a09d;
+    box-shadow: none;
+    cursor: pointer;
+
+}
